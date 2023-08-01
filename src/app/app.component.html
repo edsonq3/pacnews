@@ -1,11 +1,11 @@
 
-<p-carousel [value]="artigos" [numVisible]="1" [numScroll]="3" [circular]="false">
+<p-carousel [value]="artigos" [numVisible]="3" [numScroll]="3" [circular]="false">
   <ng-template let-artigo pTemplate="item">
       <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
           <div>
-              <h4 class="mb-1">{{ artigo.author }}</h4>
-              <h6 class="mt-0 mb-3">{{ artigo.title }}</h6>
-              <p>{{artigo.description}}</p>
+            <h6 class="mt-0 mb-3">@{{ artigo.author }}</h6>
+            <h4 class="mb-1">{{ artigo.title }}</h4>
+            <p>{{artigo.description}}</p>
           </div>
       </div>
   </ng-template>
